@@ -129,7 +129,7 @@ class Buku extends Component
             } else {
                 $buku = ModelsBuku::latest()->paginate(12);
             }
-            $title = 'Daftar Buku';
+            $title = 'Book List';
         }
         
         return view('livewire.peminjam.buku', compact('buku', 'title'));
